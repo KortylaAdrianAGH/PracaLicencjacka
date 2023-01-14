@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.2545" />
+    <PackageReference Include="CrossPlatformLibrary.Geolocation" Version="1.0.25" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="FirebaseDatabase.net" Version="4.1.0" />
+    <PackageReference Include="FireSharp" Version="2.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="LoggingSystem\" />
+    <None Remove="Menu\" />
+    <None Remove="Models\" />
+    <None Remove="Xamarin.Forms.Maps" />
+    <None Remove="CrossPlatformLibrary.Geolocation" />
+    <None Remove="Persistence\" />
+    <None Remove="sqlite-net-pcl" />
+    <None Remove="MySql.Data" />
+    <None Remove="FirebaseDatabase.net" />
+    <None Remove="FireSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LoggingSystem\" />
+    <Folder Include="Menu\" />
+    <Folder Include="Models\" />
+    <Folder Include="Persistence\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Menu\MyDriverList.xaml.cs">
+      <DependentUpon>MyDriverListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="LoggingSystem\RegisterPage.xaml.cs">
+      <DependentUpon>RegisterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Menu\DriverDetailPage.xaml.cs">
+      <DependentUpon>DriverDetailPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

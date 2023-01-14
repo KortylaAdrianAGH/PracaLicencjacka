@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DriverControllApp.Menu.doneDeliveriesPage"
+    >
+
+    <StackLayout Padding="10,10,0,0" >
+        <ListView x:Name="doneDeliveriesListView"
+                  IsPullToRefreshEnabled="true"
+                  Refreshing="refreshPage"
+                  HasUnevenRows="True"
+                  >
+            <ListView.ItemTemplate >
+                <DataTemplate >
+                   <ViewCell >
+                       <ScrollView>
+                        <StackLayout Orientation="Horizontal" Spacing="30" >
+                            <StackLayout  >
+                                <Label Text="{Binding deliveryId,
+                                    StringFormat='Numer zamówienia: {0}'}" />  
+
+                                <Label Text="{Binding deliveryAddress,
+                                    StringFormat='Miejsce dostawy: {0}'}"/>
+
+                                <Label Text="{Binding deliveryDoneTime,
+                                    StringFormat='Czas dowozu: {0}'}" />
+
+                                <Label Text="{Binding driverName,
+                                    StringFormat='Dowiezone przez: {0}'}" />
+
+                            </StackLayout>
+                        </StackLayout>
+                        </ScrollView>
+
+                    </ViewCell>
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+</ContentPage>
+

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/Adrian/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/Adrian/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/Users/Adrian/.nuget/packages/" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xamarin.forms/5.0.0.2545/buildTransitive/Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms/5.0.0.2545/buildTransitive/Xamarin.Forms.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Bcl_Build Condition=" '$(PkgMicrosoft_Bcl_Build)' == '' ">/Users/Adrian/.nuget/packages/microsoft.bcl.build/1.0.14</PkgMicrosoft_Bcl_Build>
+    <PkgGuards Condition=" '$(PkgGuards)' == '' ">/Users/Adrian/.nuget/packages/guards/1.0.10</PkgGuards>
+    <PkgCrossPlatformAdapter Condition=" '$(PkgCrossPlatformAdapter)' == '' ">/Users/Adrian/.nuget/packages/crossplatformadapter/1.0.12</PkgCrossPlatformAdapter>
+    <PkgCrossPlatformLibrary Condition=" '$(PkgCrossPlatformLibrary)' == '' ">/Users/Adrian/.nuget/packages/crossplatformlibrary/1.0.73</PkgCrossPlatformLibrary>
+    <PkgCrossPlatformLibrary_Geolocation Condition=" '$(PkgCrossPlatformLibrary_Geolocation)' == '' ">/Users/Adrian/.nuget/packages/crossplatformlibrary.geolocation/1.0.25</PkgCrossPlatformLibrary_Geolocation>
+  </PropertyGroup>
+</Project>

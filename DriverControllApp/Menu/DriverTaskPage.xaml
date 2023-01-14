@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DriverControllApp.Menu.DriverTaskPage">
+    <StackLayout x:Name="stackLayout"  >
+
+        <Frame Padding="30" BackgroundColor="LightBlue" >
+            <Label Text="{Binding name, StringFormat='Kierowca: {0}'}"
+                   TextColor="White"
+                   FontSize="30"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" />
+        </Frame>
+        <Button Text="Rozpocznij Pracę" Clicked="StartWorkButton"/>
+        <Button Text="Zakończ Pracę" Clicked="EndWorkButton" />
+        <Label Text="Obecny przebieg dostaw" FontSize="20"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"/>
+
+        <ListView x:Name="listView"
+                  ItemTapped="listView_ItemTapped"
+                  IsPullToRefreshEnabled="true"
+                  Refreshing="refreshPage"
+                  >
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout x:Name="stackLabel" Orientation="Horizontal" >
+                            <StackLayout HorizontalOptions="StartAndExpand">
+
+                                <Label x:Name="placeLabel" Text="{Binding deliveryAdress,
+                                    StringFormat='Miejsce dowozu: {0}'}" />
+                                <Label Text="{Binding deliveryStatus,
+                                    StringFormat='Status dowozu: {0}'}" />
+                 
+
+                            </StackLayout>
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </StackLayout>
+</ContentPage>
+

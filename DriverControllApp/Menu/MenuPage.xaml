@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    NavigationPage.HasBackButton="False"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DriverControllApp.Menu.MenuPage"
+    BackgroundColor="#DCE0D9">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="30" >
+
+        <Button Text="Mapa" Clicked="MapButtonClicked" FontSize="30" />
+        <Button Text="Lista kierowców" Clicked="DriversButtonClicked" FontSize="30"  />
+        <Button Text="Historia dawnych dowozów" Clicked="DeliveryHistoryButtonClicked" FontSize="30"  />
+        <Button Text="Wyloguj się" Clicked="LogOutButtonClicked" FontSize="30"  />
+
+    </StackLayout>
+</ContentPage>
+    

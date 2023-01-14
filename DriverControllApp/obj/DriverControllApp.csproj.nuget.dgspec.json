@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/Adrian/Projects/DriverControllApp/DriverControllApp/DriverControllApp/DriverControllApp.csproj": {}
+  },
+  "projects": {
+    "/Users/Adrian/Projects/DriverControllApp/DriverControllApp/DriverControllApp/DriverControllApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Adrian/Projects/DriverControllApp/DriverControllApp/DriverControllApp/DriverControllApp.csproj",
+        "projectName": "DriverControllApp",
+        "projectPath": "/Users/Adrian/Projects/DriverControllApp/DriverControllApp/DriverControllApp/DriverControllApp.csproj",
+        "packagesPath": "/Users/Adrian/.nuget/packages/",
+        "outputPath": "/Users/Adrian/Projects/DriverControllApp/DriverControllApp/DriverControllApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Adrian/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "CrossPlatformLibrary.Geolocation": {
+              "target": "Package",
+              "version": "[1.0.25, )"
+            },
+            "FireSharp": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.4, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2545, )"
+            },
+            "Xamarin.Forms.Maps": {
+              "target": "Package",
+              "version": "[5.0.0.2545, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/Users/Adrian/Library/Caches/VisualStudio/17.0/MSBuild/5219_3/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

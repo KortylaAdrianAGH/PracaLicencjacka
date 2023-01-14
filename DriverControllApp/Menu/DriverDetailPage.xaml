@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DriverControllApp.Menu.DriverDetailPage">
+    <StackLayout x:Name="stackLayout" >
+
+        <Frame Padding="30" BackgroundColor="LightBlue" >
+            <Label Text="{Binding Name, StringFormat='Kierowca: {0}'}"
+                   TextColor="White"
+                   FontSize="30"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" />
+        </Frame>
+        <Button Text="Pokaż lokalizację na mapie" Clicked="Button_Clicked"
+                Padding="10" />
+        <Entry Placeholder="Wpisz adres nowego miejsca dowozowego" x:Name="newAdressEntry"/>
+
+        <Button Text="Dodaj lokalizację dowozową" Clicked="NewLocationButton" />
+        <Label Text="Obecny przebieg dostaw" FontSize="20"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center" />
+
+    </StackLayout>
+</ContentPage>

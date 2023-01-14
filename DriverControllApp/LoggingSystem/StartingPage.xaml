@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage BackgroundColor="GhostWhite"
+             NavigationPage.HasBackButton="False"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DriverControllApp.LoggingSystem.StartingPage">
+
+    <StackLayout VerticalOptions="Center" Padding="30,30"
+                 >
+        <Label Text="Witaj w aplikacji służącej do kontrolowania pozycji twoich kierowców"
+               FontSize="30"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="Black"/>
+            
+        <StackLayout Padding="20">
+            <Entry Placeholder="Login" Keyboard="Default" x:Name="loginEntry" />
+            <Entry Placeholder="Hasło" IsPassword="True" x:Name="passwordEntry"
+                   Completed="passwordEntry_Completed"/>
+
+        </StackLayout>
+
+        <Button Text="Zaloguj się" Clicked="LogInButtonClicked" FontSize="20" />
+        <Label Text="Jeżeli nie masz jeszcze konta, możesz zalogować się poniżej" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="20"/>
+        <Button Text="Zarejestruj się" Clicked="RegisterButtonClicked" />
+
+
+    </StackLayout>
+
+
+</ContentPage>
+

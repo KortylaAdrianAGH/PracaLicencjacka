@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DriverControllApp.LoggingSystem.RegisterPage" >
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="20,0">
+        <Label Text="Aby zarejestrować konto, wprowadź poniższe informacje"  HorizontalTextAlignment="Center" FontSize="30"/>
+
+        <StackLayout Padding="40" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
+            <Grid ColumnSpacing="0">
+                <Label Grid.Column="1" x:Name="choiceLabel" Text="Konto kierowcy"
+                       HorizontalTextAlignment="Start"/>
+                <Switch Grid.Column="0" IsToggled="True" x:Name="choiceSwitch" Toggled="Handle_Toggled"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand" />
+            </Grid>
+        </StackLayout>
+
+        <Entry x:Name="userNameEntry" Placeholder="Nazwa użytkownika" />
+        <Entry x:Name="loginEntry" Placeholder="login"/>
+        <Entry x:Name="passwordEntry" Placeholder="password" Completed="passwordEntry_Completed" IsPassword="True"/>
+
+        <StackLayout Padding="20">
+            <Button Text="Zarejestruj się" FontSize="20" Clicked="RegisterButtonClicked" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
+
